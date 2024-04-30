@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adjusted the CSS file link -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <title>Responsive Event Organizer Website</title>
+</head>
+<body>
+     <!-- Include navbar, service, maps, about, gallery, price, review, contact, and footer templates -->
+     
+     {{>navbar}}
+
+     <section class="home" id="home">
+        <div class="content">
+            <h3>
+                Its time to celebrate! the best <span> event organizers</span>
+            </h3>
+            <a href="#contact" class="btn">contact us</a>
+        </div>
+        <div class="swiper-conatainer home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/wedimg.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/img7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/img3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/img4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/img6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/img2.jpg" alt=""></div>
+            </div>
+        </div>
+     </section>
+
+     {{>service}}
+
+     {{>maps}}
+
+     {{>about}}
+
+     {{>gallery}}
+
+     {{>price}}
+
+     {{>review}}
+
+     {{>contact}}
+
+     {{>footer}}
+
+     <div class="theme-toggler">
+        <div class="toggle-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+
+        <h3> choose color</h3>
+
+        <div class="buttons">
+            <div class="theme-btn" style="background-color:#3867d6;"></div>
+            <div class="theme-btn" style="background-color:#f7b371;"></div>
+            <div class="theme-btn" style="background-color:#ff0033;"></div>
+            <div class="theme-btn" style="background-color:#20bf6b;"></div>
+            <div class="theme-btn" style="background-color:#fa8231;"></div>
+            <div class="theme-btn" style="background-color:#FC4278;"></div>
+        </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    
+</body>
+</html>
